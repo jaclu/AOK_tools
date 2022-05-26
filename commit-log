@@ -1,0 +1,23 @@
+commit d21cddc10b9b0218ed634a84002142c7840abd0f (HEAD -> shell_changes, origin/shell_changes)
+Author: jaclu <jacob.lundqvist@gmail.com>
+Date:   Thu May 26 14:34:15 2022 +0200
+
+    changed detection of current dir
+        The new syntax passes both shellcheck and checkbashisms
+
+commit 59121520de397d79cb5938b0178f1ff5a659362d
+Author: jaclu <jacob.lundqvist@gmail.com>
+Date:   Thu May 26 14:28:20 2022 +0200
+
+    variable separation
+        The syntax "$a_param[-h] " works as intended, but gives a shellcheck warning
+	    "Use braces when expanding array". So it makes sense to clean it up into
+	        "${a_param}[-h]"
+
+commit ea7db84bc00c042245f0a8b3a5927470d1c7fa09
+Author: jaclu <jacob.lundqvist@gmail.com>
+Date:   Thu May 26 14:27:18 2022 +0200
+
+    now passes checkbashisms
+        also lowercased current_dir
+	
