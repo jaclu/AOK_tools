@@ -20,6 +20,11 @@ cd "$CURRENT_DIR" || return
 prefix=~/git_repos/others/AOK/
 
 checkables=(
+    build_image
+    chroot_build_image
+
+    Files/profile
+
     Files/bin/aok
     Files/bin/apt
     Files/bin/disable_sshd
@@ -29,7 +34,6 @@ checkables=(
     Files/bin/enable_sshd
     Files/bin/enable_vnc
     Files/bin/fix_services
-    Files/bin/get_apk
     Files/bin/iCloud
     Files/bin/installed
     Files/bin/ipad_tmux
