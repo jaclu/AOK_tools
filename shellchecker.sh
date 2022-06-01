@@ -17,7 +17,7 @@ CURRENT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 
 cd "$CURRENT_DIR" || return
 
-prefix=~/git_repos/others/AOK/
+prefix=~/git_repos/others/AOK-Filesystem-Tools/
 
 checkables=(
     build_image
@@ -26,6 +26,7 @@ checkables=(
     Files/profile
 
     Files/bin/aok
+    Files/bin/aok_groups
     Files/bin/apt
     Files/bin/disable_sshd
     Files/bin/disable_vnc
