@@ -55,5 +55,5 @@ for script in "${checkables[@]}"; do
     echo "Checking: $script"
     [ -n "$prefix" ] && script="$prefix$script"
     shellcheck -x "$script"  || exit 1
-    checkbashisms "$script"
+    checkbashisms "$script"  || exit 1
 done
