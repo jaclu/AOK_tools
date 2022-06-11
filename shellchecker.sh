@@ -5,7 +5,7 @@
 #
 #  Part of https://github.com/jaclu/shell_envs
 #
-#  Version: 1.0.2 2022-04-13
+#  Version: 1.0.4 2022-06-11
 #
 
 #
@@ -20,8 +20,9 @@ cd "$CURRENT_DIR" || return
 prefix=~/git_repos/others/AOK-Filesystem-Tools/
 
 checkables=(
-    build_image
-    chroot_build_image
+    build
+    setup_image_chrooted
+    build_finish
 
     Files/profile
 
