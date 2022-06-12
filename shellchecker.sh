@@ -20,7 +20,7 @@ cd "$CURRENT_DIR" || return
 prefix=~/git_repos/others/AOK-Filesystem-Tools/
 
 checkables=(
-    build
+    build_fs
     setup_image_chrooted
     build_finish
 
@@ -41,7 +41,6 @@ checkables=(
     Files/bin/ipad_tmux
     Files/bin/iphone_tmux
     Files/bin/pbcopy
-    Files/bin/pkg_groups
     Files/bin/post_boot.sh
     Files/bin/showip
     Files/bin/toggle_multicore
